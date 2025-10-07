@@ -1,15 +1,13 @@
-// Import all markdown files
+
 const modules = import.meta.glob('../content/blog/*.md', { 
   query: '?raw',
   eager: true 
 })
 
-// Parse frontmatter and generate blog posts
 export const blogPosts = Object.entries(modules).map(([path, module]) => {
   const text = module.default
   const match = text.match(/^---\n([\s\S]*?)\n---/)
   
-  // Extract filename for id
   const filename = path.split('/').pop().replace('.md', '')
   
   if (match) {

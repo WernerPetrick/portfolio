@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <div className="portfolio-page">
         <nav className="top-navigation" aria-label="Primary">
           <ul className="nav-links">

@@ -280,6 +280,31 @@
   color: #ffffff;
 }
 
+.back-link{
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 12px;
+}
+
+.prose{
+  max-width: 165ch;
+  line-height: 1.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.prose h2, h3{
+  margin-bottom: 0.25rem;
+}
+
+.prose p{
+  line-height: 1.2rem;
+  margin-bottom: 0.275rem;
+}
+
 .blog-intro {
   font-size: 1.1rem;
   line-height: 1.7;
